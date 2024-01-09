@@ -4,6 +4,12 @@ const expresslayout = require('express-ejs-layouts')
 const app = express()
 const PORT = 5000 || process.env.PORT
 
+const connect_db = require('./server/config/db.js')
+connect_db()
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
 // public folder contains static files
 app.use(express.static('public'))
 
