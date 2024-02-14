@@ -37,7 +37,7 @@ router.get('/post/:id', async (req,res)=>{
 		console.log(id)
 		const data = await Post.findById({ _id: id })
 		const locals = {
-			title: "hello",
+			title: data.title,
 			description:"simple blog"
 		}
 	    res.render('post',{locals,data})

@@ -282,36 +282,33 @@ img{
   padding: 10px 0;
 }
 
-/* SeachBar */
+/* search bar */
 .searchBar {
-  /* visibility: hidden;
-  transform: translateY(-10px); */
+  visibility: visible;
+  transform: translateY(-100px);
   background-color: var(--black);
   padding: 4px 0;
   position: absolute;
   left: 0;
   right: 0;
 }
-
-
 .searchBar.open {
   transform: translateY(0);
   transition: transform 0.1s;
 }
-
 .searchBar input {
   margin: 0;
   border: 0;
 }
-
+.searchBtn{cursor: pointer;}
 #searchClose {
   position: absolute;
   top: 0;
   right: 0;
   color: var(--gray-light);
   padding: 15px;
+  cursor: pointer;
 }
-
 
 .pagination {
   font-size: 1.3rem;
@@ -320,29 +317,10 @@ img{
   margin-top: 40px;
   display: inline-block;
 }
-
 .pagination:hover {
   color: var(--black);
 }
-.searchBar{
-  /* visibility: hidden;
-  transform: translateY(-100px); */
-  background-color: var(--black);
-  padding: 4px 0px;
-  left:0;
-  right: 0;
-}
-.searchBar.open{
-  transform: translateY(0);
-  transition: transform 0.1s;
-}
-.searchBar input{
-  margin: 0;
-  padding: 0;
-}
-#searchClose{
-  color: white;
-}
+
 @media only screen and (min-width: 768px) {
   .header {
     grid-template-columns: auto 1fr auto;

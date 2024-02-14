@@ -7,6 +7,7 @@ const PORT = 5000 || process.env.PORT
 const connect_db = require('./server/config/db.js')
 connect_db()
 
+// able to parse the data through forms
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
